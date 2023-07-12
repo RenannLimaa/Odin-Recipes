@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #aed3e1;
+}
+
+.title {
+    font-family: 'Roboto Mono', sans-serif;
+    margin-top: 4%;
+    margin-bottom: 16px;
+}
+
+img {
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+}
+
+.recipes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 150px;
+    margin: auto;
+
+    border: 2px solid #2394B0;
+    border-radius: 10px;
+}
+
+ ul a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto Mono', sans-serif;
+
+    display: inline-block;
+    position: relative;
+    
+    color: black;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2394B0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+    transform:scaleX(1);
+    transform-origin: bottom left;
+}
