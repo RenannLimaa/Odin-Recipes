@@ -1,14 +1,19 @@
+:root {
+    --light-blue: #aed3e1;
+    --blue: #2394B0;
+    --black: #000000;
+}
+
 * {
     margin: 0;
     text-align: center;
 }
 
 body {
-    background-color: #aed3e1;
+    background-color: var(--light-blue);
 }
 
 .title {
-    font-family: 'Roboto Mono', sans-serif;
     margin-top: 4%;
     margin-bottom: 16px;
 }
@@ -28,19 +33,18 @@ img {
     height: 150px;
     margin: auto;
 
-    border: 2px solid #2394B0;
+    border: 2px solid var(--blue);
     border-radius: 10px;
 }
 
  ul a{
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Roboto Mono', sans-serif;
 
     display: inline-block;
     position: relative;
     
-    color: black;
+    color: var(--black);
 }
 
 a:after {
@@ -51,7 +55,7 @@ a:after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #2394B0;
+    background-color: var(--blue);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
